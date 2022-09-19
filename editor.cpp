@@ -2,6 +2,20 @@
 #include <vector>
 #include "editor.h"
 #include <fmt/core.h>
+#include <algorithm>
+
+
+void Square::change() {
+    fmt::print("The SQUARE is changed");
+};
+
+void Circle::change() {
+    fmt::print("The CIRCLE is changed");
+};
+
+void Triangle::change() {
+    fmt::print("The TRIANGLE is changed");
+};
 
 
 Tab::Tab(){};
@@ -44,22 +58,9 @@ void Editor::save_tab(Tab* tab, std::string path){
 }
 
 void Editor::start(){
-    fmt::print("Starting the engine.");
+    fmt::print("Starting the engine");
 };
 
 void Editor::stop(){
-    fmt::print("Preparing for stopping the engine...Stopped.");
+    fmt::print("Preparing for stopping the engine...Stopped");
 };
-
-
-
-
-
-
-
-
-
-
-
-
-}
