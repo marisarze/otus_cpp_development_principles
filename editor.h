@@ -10,23 +10,22 @@
 
 class Figure {
     public:
-    std::string name="AbStRaCt_FiGuRe";
-    virtual void show() const;
+    virtual void change();
 };
 
 class Square: public Figure {
     public:
-    std::string name="SqUaRe";
+    void change() override;
 };
 
 class Circle: public Figure {
     public:
-    std::string name="CiRcLe";
+    void change() override;
 };
 
 class Triangle: public Figure {
     public:
-    std::string name="TrIaNgLe";
+    void change() override;
 };
 
 
@@ -51,5 +50,5 @@ class Editor {
     void change_focus_to(Tab* tab);
     void save_tab(Tab* tab, std::string path);
     void start();
-    void close();
+    void stop();
 };
