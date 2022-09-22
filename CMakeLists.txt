@@ -25,7 +25,7 @@ set_target_properties(editor
 target_include_directories(editor
     PRIVATE "${CMAKE_CURRENT_BINARY_DIR}"
 )
-add_subdirectory(tests)
+
 if (MSVC)
     target_compile_options(editor PRIVATE
         /W4
