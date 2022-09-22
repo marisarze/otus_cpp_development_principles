@@ -24,7 +24,7 @@ void Rectangle::change() {
     fmt::print("The RECTANGLE is changed");
 }
 
-Tab::Tab(){};
+Tab::Tab(){}
 
 Tab::Tab(std::string path){
     UNUSED(path);
