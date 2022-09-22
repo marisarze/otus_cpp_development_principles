@@ -5,7 +5,7 @@
 
 class Figure {
     public:
-    virtual void change();
+    virtual void change() = 0;
 };
 
 class Square: public Figure {
