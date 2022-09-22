@@ -5,8 +5,8 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 include(FetchContent)
 FetchContent_Declare(fmt
-  GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-  GIT_TAG master
+    GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+    GIT_TAG master
 )
 FetchContent_MakeAvailable(fmt)
 
@@ -15,7 +15,9 @@ project(editor VERSION ${PROJECT_VESRION})
 
 
 
-add_executable(editor main.cpp)
+add_executable(editor main.cpp editor.cpp)
+
+target_link_libraries(editor fmt) 
 
 set_target_properties(editor
     PROPERTIES
