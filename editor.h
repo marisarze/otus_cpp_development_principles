@@ -3,6 +3,9 @@
 #include <memory>
 
 
+template <typename... Args>
+void println(std::string format, const Args&... args);
+
 class Figure {
     public:
     virtual void change() = 0;
@@ -10,22 +13,22 @@ class Figure {
 
 class Square: public Figure {
     public:
-    void change() override;
+    void change() ;
 };
 
 class Circle: public Figure {
     public:
-    void change() override;
+    void change() ;
 };
 
 class Triangle: public Figure {
     public:
-    void change() override;
+    void change() ;
 };
 
 class Rectangle: public Figure {
     public:
-    void change() override;
+    void change() ;
 };
 
 
@@ -47,6 +50,7 @@ class Editor {
     void open_file(std::string path);
     void create_new_tab();
     void change_focus_to(std::shared_ptr<Tab> tab);
+    std::vector <std::shared_ptr<Figure>> current_tab_content();
     void close_tab(std::shared_ptr<Tab> tab);
     void start();
     void stop();
