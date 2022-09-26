@@ -47,6 +47,7 @@ class Editor {
     public:
     std::vector <std::shared_ptr<Tab>> open_tabs = {};
     std::shared_ptr<Tab> current_tab = nullptr;
+    Editor();
     void open_file(std::string path);
     void create_new_tab();
     void change_focus_to(std::shared_ptr<Tab> tab);
