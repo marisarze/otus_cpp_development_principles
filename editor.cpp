@@ -45,7 +45,8 @@ void Tab::save(std::string path){
 }
 
 void Tab::add_figure(std::shared_ptr<Figure> figure){
-        content.emplace_back(figure);
+    content.emplace_back(figure);
+    println("New figure {} was added to tab {}", figure, this);
 }
 
 void Tab::remove_figure(std::shared_ptr<Figure> figure){

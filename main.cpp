@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
         auto editor = Editor();
         editor.start();
         editor.open_file("Some unexpected path");
-        // editor.current_tab->add_figure(std::shared_ptr<Circle>());
+        editor.current_tab->add_figure(std::shared_ptr<Circle>());
         // auto content = editor.current_tab->content;
         // (content[0])->change();
         // println("content size: {}", std::to_string((int)(content.size())));
