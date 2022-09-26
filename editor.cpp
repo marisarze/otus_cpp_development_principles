@@ -62,8 +62,8 @@ Editor::Editor(){
 void Editor::open_file(std::string path){
     auto new_tab = std::make_shared<Tab>(path); 
     open_tabs.emplace_back(new_tab);
+    println("New empty tab {} created with loading from \'{}\'", fmt::ptr(new_tab), path);
     change_focus_to(new_tab);
-    println("New empty tab created with loading from \'{}\'", path);
 }
 
 void Editor::create_new_tab(){
