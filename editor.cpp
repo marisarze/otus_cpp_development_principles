@@ -62,7 +62,9 @@ void Editor::open_file(std::string path){
 }
 
 void Editor::create_new_tab(){
-    open_tabs.emplace_back(std::make_shared<Tab>());
+    auto new_tab = std::make_shared<Tab>(); 
+    open_tabs.emplace_back(new_tab);
+    change_focus_to(new_tab);
     println("New empty tab created");
 }
 
