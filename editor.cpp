@@ -79,7 +79,7 @@ void Editor::change_focus_to(std::shared_ptr<Tab> tab){
 
 std::vector <std::shared_ptr<Figure>> Editor::current_tab_content(){
     return current_tab->content;
-};
+}
 
 void Editor::start(){
     println("Starting the engine");
