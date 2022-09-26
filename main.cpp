@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
         std::shared_ptr<Figure> figure_ptr = std::shared_ptr<Circle>();
         editor.current_tab->add_figure(figure_ptr);
         auto content = editor.current_tab->content;
-        content[0]->change();
+        content[0].get()->change();
         // println("content size: {}", std::to_string((int)(content.size())));
         // editor.current_tab->add_figure(std::shared_ptr<Square>());
         // // editor.current_tab->content[0]->change();
