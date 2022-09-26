@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     try
     {
         auto editor = Editor();
-        // editor.start();
+        editor.start();
         // editor.open_file("Some unexpected path");
         // editor.current_tab->add_figure(std::shared_ptr<Circle>());
         // auto content = editor.current_tab->content;
