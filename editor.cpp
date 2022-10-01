@@ -16,22 +16,20 @@ void println(std::string format, const Args&... args) {
   std::putc('\n', stdout);
 }
 
-// void Figure::change() {};
-
 void Square::change() {
-    println("The SQUARE is changed", 0);
+    println("SQUARE is changed");
 }
 
 void Circle::change() {
-    println("The CIRCLE is changed", 0);
+    println("CIRCLE is changed");
 }
 
 void Triangle::change() {
-    println("The TRIANGLE is changed", 0);
+    println("TRIANGLE is changed");
 }
 
 void Rectangle::change() {
-    println("The RECTANGLE is changed", 0);
+    println("RECTANGLE is changed");
 }
 
 Tab::Tab(){}
