@@ -19,6 +19,7 @@ jobs:
       - run: ./editor
       - run: cpack
       - run: dpkg -c editor-0.0.${{ github.run_number }}-Linux.deb
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -39,3 +40,20 @@ jobs:
           asset_path: ./editor-0.0.${{ github.run_number }}-Linux.deb
           asset_name: editor-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
+
+
+      - run: sed -i 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
+      - run: sed -i 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' editor.cpp
+      - run: d=`date +%m-%d-%Y`
+      - run: sed -i 's/BUILD_DATE/date +%m-%d-%Y/' 
+      - run: cat Doxyfile
+      - run: mkdir docs; cd docs; mkdir html;
+      - run: touch docs/html/.nojekyll
+      - run: sudo apt-get install doxygen -y
+      - run: doxygen Doxyfile
+      - run: ls -aq 
+      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs/html
