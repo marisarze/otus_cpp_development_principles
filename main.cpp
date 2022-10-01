@@ -20,10 +20,10 @@ int main(int argc, char const *argv[])
         editor.current_tab->content[0]->change();
         editor.current_tab->save("Another unexpected path for saving");
         editor.create_new_tab();
-        // editor.current_tab->add_figure(std::make_shared<Rectangle>());
-        // editor.current_tab->content[0]->change();
-        // editor.current_tab->add_figure(std::make_shared<Triangle>());
-        // editor.current_tab->content[0]->change();
+        editor.current_tab->add_figure(std::make_shared<Rectangle>());
+        editor.current_tab->content[0]->change();
+        editor.current_tab->add_figure(std::make_shared<Triangle>());
+        editor.current_tab->content[0]->change();
         // editor.current_tab->remove_figure(editor.current_tab->content[0]);
         // editor.current_tab->save("Secret path for saving");
         // editor.close_tab(editor.open_tabs[0]);
