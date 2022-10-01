@@ -14,11 +14,9 @@ int main(int argc, char const *argv[])
         auto editor = Editor();
         editor.start();
         editor.open_file("Some unexpected path");
-        std::shared_ptr<Figure> figure_ptr = std::shared_ptr<Circle>();
+        std::shared_ptr<Figure> figure_ptr = std::make_shared<Circle>();
         editor.current_tab->add_figure(figure_ptr);
-        auto content = editor.current_tab->content;
-        auto ss = content[0];
-        // println("content size: {}", std::to_string((int)(content.size())));
+        editor.current_tab->content[0]->change();
         // editor.current_tab->add_figure(std::shared_ptr<Square>());
         // // editor.current_tab->content[0]->change();
         // editor.current_tab->save("Another unexpected path");
