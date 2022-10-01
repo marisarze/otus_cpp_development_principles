@@ -39,7 +39,7 @@ Tab::Tab(std::string path){
 }
 
 void Tab::save(std::string path){
-    UNUSED(path);
+    println("Tab saved to \'{}\'", path);
 }
 
 void Tab::add_figure(std::shared_ptr<Figure> figure){
@@ -87,13 +87,6 @@ void Editor::close_tab(std::shared_ptr<Tab> tab){
         }
     } else {
         println("Target tab {} is not exist among open tabs", fmt::ptr(tab.get()));
-    }
-}
-
-void Editor::save_current_tab(std::string path){
-    if (current_tab!=nullptr){
-        current_tab->save(path);
-        println("Tab saved to \'{}\'", path);
     }
 }
 
