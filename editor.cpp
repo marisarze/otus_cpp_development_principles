@@ -51,8 +51,12 @@ void Tab::add_figure(std::shared_ptr<Figure> figure){
 
 void Tab::remove_figure(std::shared_ptr<Figure> figure){
     auto it = std::find(content.begin(), content.end(), figure);
-    content.erase(it);
-    println("Figure erased from tab {}", fmt::ptr(this));
+    if (it != content.end()){
+        content.erase(it);
+        println("Figure {} erased from tab {}", fmt::ptr(figure.get()), fmt::ptr(this));
+    } else {
+        println("There is nothing to remove from tab {}", fmt::ptr(this));
+    }
 }
 
 Editor::Editor(){
@@ -62,30 +66,48 @@ Editor::Editor(){
 void Editor::open_file(std::string path){
     auto new_tab = std::make_shared<Tab>(path); 
     open_tabs.emplace_back(new_tab);
-    println("New empty tab {} created with loading from \'{}\'", fmt::ptr(new_tab), path);
+    println("New empty tab {} created with loading from \'{}\'", fmt::ptr(new_tab.get()), path);
     change_focus_to(new_tab);
 }
 
 void Editor::create_new_tab(){
     auto new_tab = std::make_shared<Tab>(); 
     open_tabs.emplace_back(new_tab);
+    println("New empty tab {} created", fmt::ptr(new_tab.get()));
     change_focus_to(new_tab);
-    println("New empty tab created");
 }
 
 void Editor::close_tab(std::shared_ptr<Tab> tab){
     auto it = std::find(open_tabs.begin(), open_tabs.end(), tab);
-    open_tabs.erase(it);
-    println("Tab erased from editor {}", fmt::ptr(this));
+    if (it != open_tabs.end()){
+        open_tabs.erase(it);
+        println("Tab {} erased from the editor", fmt::ptr(tab.get()));
+        change_focus_to(open_tabs[-1]);
+    } else {
+        println("Target tab {} is not exist among open tabs", fmt::ptr(tab.get()));
+    }
+}
+
+
+void Editor::save_current_tab(std::string path){
+    if (current_tab!=nullptr){
+        current_tab->save(path);
+        println("Tab saved to \'{}\'", path);
+    }
 }
 
 void Editor::change_focus_to(std::shared_ptr<Tab> tab){
-    current_tab = tab;
-    println("Current focus changed to {}", fmt::ptr(tab.get()));
-}
-
-std::vector <std::shared_ptr<Figure>> Editor::current_tab_content(){
-    return current_tab->content;
+    auto it = std::find(open_tabs.begin(), open_tabs.end(), tab);
+    if (it != open_tabs.end()){
+        current_tab = tab;
+        println("Current focus changed to {}", fmt::ptr(tab.get()));
+    } else {
+        if ((int)open_tabs.size()>0){
+            current_tab = open_tabs[-1];
+        } else {
+            current_tab = nullptr;
+        }
+    }
 }
 
 void Editor::start(){

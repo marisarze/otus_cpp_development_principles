@@ -51,7 +51,7 @@ class Editor {
     void open_file(std::string path);
     void create_new_tab();
     void change_focus_to(std::shared_ptr<Tab> tab);
-    std::vector <std::shared_ptr<Figure>> current_tab_content();
+    void save_current_tab(std::string path);
     void close_tab(std::shared_ptr<Tab> tab);
     void start();
     void stop();
