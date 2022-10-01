@@ -82,12 +82,15 @@ void Editor::close_tab(std::shared_ptr<Tab> tab){
     if (it != open_tabs.end()){
         open_tabs.erase(it);
         println("Tab {} erased from the editor", fmt::ptr(tab.get()));
-        change_focus_to(open_tabs[-1]);
+        if ((int)open_tabs.size()>0){
+            change_focus_to(open_tabs[-1]);
+        } else {
+            current_tab = nullptr;
+        }
     } else {
         println("Target tab {} is not exist among open tabs", fmt::ptr(tab.get()));
     }
 }
-
 
 void Editor::save_current_tab(std::string path){
     if (current_tab!=nullptr){
@@ -102,11 +105,7 @@ void Editor::change_focus_to(std::shared_ptr<Tab> tab){
         current_tab = tab;
         println("Current focus changed to {}", fmt::ptr(tab.get()));
     } else {
-        if ((int)open_tabs.size()>0){
-            current_tab = open_tabs[-1];
-        } else {
-            current_tab = nullptr;
-        }
+        println("The focus can not be changed to {}", fmt::ptr(tab.get()));
     }
 }
 
