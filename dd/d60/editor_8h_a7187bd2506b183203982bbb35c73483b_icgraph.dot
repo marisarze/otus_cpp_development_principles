@@ -1,0 +1,40 @@
+digraph "println"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="println",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Utility function for printing messages using <fmt> library plus new line character."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Tab::add_figure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d4b/class_tab.html#a43080d27e488488f372e536d574f4641",tooltip="Method for adding figure to tab content."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Square::change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d0c/class_square.html#abdd8a56d55a6644b930abe1fccbd8b9f",tooltip="implementation of the method for changing the graphic primitive \"Square\""];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Circle::change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d88/class_circle.html#affbe64c008c0cb9d1f8132383c85aaf1",tooltip="implementation of the method for changing the graphic primitive \"Circle\""];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Triangle::change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d28/class_triangle.html#abecb9709ed463d403a31b4ff3d7b3844",tooltip="implementation of the method for changing the graphic primitive \"Triangle\""];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Rectangle::change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dc7/class_rectangle.html#a0583e8fc0760a617289fa5902f3dd684",tooltip="implementation of the method for changing the graphic primitive \"Rectangle\""];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Editor::change_focus_to",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#a2a0173545fcc3f7a162e555a3f058e41",tooltip="changing focus to target tab through setting \"current_tab\" parameter value."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Editor::close_tab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#ad350995c3add4fc934b22e7172b7cac8",tooltip="closing tab (removing it from open tabs)."];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Editor::create_new_tab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#a546443cb9f1a9740e3b7d0f03d06e6ad",tooltip="creating new empty tab"];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Editor::open_file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#a0dbd67151109a433f0df1af433a59fd4",tooltip="loading new document to open tabs"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Editor::Editor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#ae208b788b6212af03488814462ae40d6",tooltip="Construct a new Editor:: Editor object."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Tab::remove_figure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d4b/class_tab.html#a13e0298326e32328fd83c79736c93a2f",tooltip="Method for removing figure from tab content, if figure is not in content prints corresponding message..."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Tab::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d4b/class_tab.html#ab6afd14531f3911d8702552a7885f418",tooltip="saving Tab to document"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Editor::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#aa544342a3c8f90fe588206ee60652014",tooltip="Starting of abstract editor."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Editor::stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#ab6906e00dd64791b8a8e4cdf8afcaa48",tooltip="Storpping of abstract editor."];
+}

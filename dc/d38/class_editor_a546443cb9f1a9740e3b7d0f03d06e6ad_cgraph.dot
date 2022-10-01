@@ -1,0 +1,14 @@
+digraph "Editor::create_new_tab"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Editor::create_new_tab",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="creating new empty tab"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Editor::change_focus_to",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d38/class_editor.html#a2a0173545fcc3f7a162e555a3f058e41",tooltip="changing focus to target tab through setting \"current_tab\" parameter value."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="println",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d1f/editor_8cpp.html#a7187bd2506b183203982bbb35c73483b",tooltip="Utility function for printing messages using <fmt> library plus new line character."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
