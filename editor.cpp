@@ -83,7 +83,7 @@ void Editor::close_tab(std::shared_ptr<Tab> tab){
         open_tabs.erase(it);
         println("Tab {} erased from the editor", fmt::ptr(tab.get()));
         if ((int)open_tabs.size()>0){
-            change_focus_to(open_tabs[-1]);
+            change_focus_to(open_tabs[0]);
         } else {
             current_tab = nullptr;
         }

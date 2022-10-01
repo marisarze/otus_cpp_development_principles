@@ -26,9 +26,9 @@ int main(int argc, char const *argv[])
         editor.current_tab->content[0]->change();
         editor.current_tab->remove_figure(editor.current_tab->content[0]);
         editor.current_tab->save("Secret path for saving");
-        // editor.close_tab(editor.open_tabs[0]);
-        // editor.close_tab(editor.open_tabs[0]);
-        // editor.stop();
+        editor.close_tab(editor.open_tabs[0]);
+        editor.close_tab(editor.open_tabs[0]);
+        editor.stop();
     }
     catch(const std::exception &e)
     {
