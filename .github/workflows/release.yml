@@ -50,7 +50,8 @@ jobs:
       - run: touch docs/html/.nojekyll
       - run: sudo apt-get install doxygen -y
       - run: doxygen Doxyfile
-      - run: ls -aq 
+      - run: ls -aq
+      - run: ls -aq docs
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
