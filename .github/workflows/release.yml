@@ -48,7 +48,7 @@ jobs:
       - run: cat editor.cpp
       - run: mkdir docs; cd docs; mkdir html;
       - run: touch docs/html/.nojekyll
-      - run: sudo apt-get install -y doxygen graphviz texlive-full libmd5 liblodepng libmscgen
+      - run: sudo apt-get install -y doxygen graphviz texlive-full
       - run: doxygen Doxyfile
       - run: ls -aq
       - run: ls -aq docs
