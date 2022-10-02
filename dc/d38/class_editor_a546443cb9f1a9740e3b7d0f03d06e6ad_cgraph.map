@@ -1,0 +1,5 @@
+<map id="Editor::create_new_tab" name="Editor::create_new_tab">
+<area shape="rect" id="node1" title="creating new empty tab" alt="" coords="5,31,176,57"/>
+<area shape="rect" id="node2" href="$dc/d38/class_editor.html#a2a0173545fcc3f7a162e555a3f058e41" title="changing focus to target tab through setting &quot;current_tab&quot; parameter value." alt="" coords="224,5,401,32"/>
+<area shape="rect" id="node3" href="$d1/d1f/editor_8cpp.html#a7187bd2506b183203982bbb35c73483b" title="Utility function for printing messages using &lt;fmt&gt; library plus new line character." alt="" coords="449,31,513,57"/>
+</map>

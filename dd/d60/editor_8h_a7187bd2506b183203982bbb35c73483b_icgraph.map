@@ -1,0 +1,17 @@
+<map id="println" name="println">
+<area shape="rect" id="node1" title="Utility function for printing messages using &lt;fmt&gt; library plus new line character." alt="" coords="449,335,513,361"/>
+<area shape="rect" id="node2" href="$d9/d4b/class_tab.html#a43080d27e488488f372e536d574f4641" title="Method for adding figure to tab content." alt="" coords="253,5,373,32"/>
+<area shape="rect" id="node3" href="$d9/d0c/class_square.html#abdd8a56d55a6644b930abe1fccbd8b9f" title="implementation of the method for changing the graphic primitive &quot;Square&quot;" alt="" coords="251,56,374,83"/>
+<area shape="rect" id="node4" href="$d0/d88/class_circle.html#affbe64c008c0cb9d1f8132383c85aaf1" title="implementation of the method for changing the graphic primitive &quot;Circle&quot;" alt="" coords="255,107,370,133"/>
+<area shape="rect" id="node5" href="$d2/d28/class_triangle.html#abecb9709ed463d403a31b4ff3d7b3844" title="implementation of the method for changing the graphic primitive &quot;Triangle&quot;" alt="" coords="249,157,377,184"/>
+<area shape="rect" id="node6" href="$d9/dc7/class_rectangle.html#a0583e8fc0760a617289fa5902f3dd684" title="implementation of the method for changing the graphic primitive &quot;Rectangle&quot;" alt="" coords="241,208,384,235"/>
+<area shape="rect" id="node7" href="$dc/d38/class_editor.html#a2a0173545fcc3f7a162e555a3f058e41" title="changing focus to target tab through setting &quot;current_tab&quot; parameter value." alt="" coords="224,309,401,336"/>
+<area shape="rect" id="node8" href="$dc/d38/class_editor.html#ad350995c3add4fc934b22e7172b7cac8" title="closing tab (removing it from open tabs)." alt="" coords="25,272,156,299"/>
+<area shape="rect" id="node9" href="$dc/d38/class_editor.html#a546443cb9f1a9740e3b7d0f03d06e6ad" title="creating new empty tab" alt="" coords="5,335,176,361"/>
+<area shape="rect" id="node10" href="$dc/d38/class_editor.html#a0dbd67151109a433f0df1af433a59fd4" title="loading new document to open tabs" alt="" coords="27,385,154,412"/>
+<area shape="rect" id="node11" href="$dc/d38/class_editor.html#ae208b788b6212af03488814462ae40d6" title="Construct a new Editor:: Editor object." alt="" coords="259,461,366,488"/>
+<area shape="rect" id="node12" href="$d9/d4b/class_tab.html#a13e0298326e32328fd83c79736c93a2f" title="Method for removing figure from tab content, if figure is not in content prints corresponding message..." alt="" coords="239,512,386,539"/>
+<area shape="rect" id="node13" href="$d9/d4b/class_tab.html#ab6afd14531f3911d8702552a7885f418" title="saving Tab to document" alt="" coords="271,563,354,589"/>
+<area shape="rect" id="node14" href="$dc/d38/class_editor.html#aa544342a3c8f90fe588206ee60652014" title="Starting of abstract editor." alt="" coords="263,613,362,640"/>
+<area shape="rect" id="node15" href="$dc/d38/class_editor.html#ab6906e00dd64791b8a8e4cdf8afcaa48" title="Storpping of abstract editor." alt="" coords="265,664,361,691"/>
+</map>

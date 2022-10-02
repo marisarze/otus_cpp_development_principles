@@ -1,0 +1,5 @@
+<map id="Editor::close_tab" name="Editor::close_tab">
+<area shape="rect" id="node1" title="closing tab (removing it from open tabs)." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$dc/d38/class_editor.html#a2a0173545fcc3f7a162e555a3f058e41" title="changing focus to target tab through setting &quot;current_tab&quot; parameter value." alt="" coords="184,5,361,32"/>
+<area shape="rect" id="node3" href="$d1/d1f/editor_8cpp.html#a7187bd2506b183203982bbb35c73483b" title="Utility function for printing messages using &lt;fmt&gt; library plus new line character." alt="" coords="409,31,473,57"/>
+</map>

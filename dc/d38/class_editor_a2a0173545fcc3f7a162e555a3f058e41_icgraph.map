@@ -1,0 +1,6 @@
+<map id="Editor::change_focus_to" name="Editor::change_focus_to">
+<area shape="rect" id="node1" title="changing focus to target tab through setting &quot;current_tab&quot; parameter value." alt="" coords="224,56,401,83"/>
+<area shape="rect" id="node2" href="$dc/d38/class_editor.html#ad350995c3add4fc934b22e7172b7cac8" title="closing tab (removing it from open tabs)." alt="" coords="25,5,156,32"/>
+<area shape="rect" id="node3" href="$dc/d38/class_editor.html#a546443cb9f1a9740e3b7d0f03d06e6ad" title="creating new empty tab" alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node4" href="$dc/d38/class_editor.html#a0dbd67151109a433f0df1af433a59fd4" title="loading new document to open tabs" alt="" coords="27,107,154,133"/>
+</map>
