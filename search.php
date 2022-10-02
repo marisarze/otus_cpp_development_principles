@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">otus_cpp_development_principles
-   &#160;<span id="projectnumber">0.0.64</span>
+   &#160;<span id="projectnumber">0.0.65</span>
    </div>
    <div id="projectbrief">Creating an abstract editor for graphical primitives</div>
   </td>
@@ -62,7 +62,7 @@ main();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 2 2022 06:48:56 for otus_cpp_development_principles by
+    <li class="footer">Generated on Sun Oct 2 2022 07:15:08 for otus_cpp_development_principles by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
