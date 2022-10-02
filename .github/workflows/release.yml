@@ -47,7 +47,7 @@ jobs:
       - run: d="$(date)"
       - run: echo $d > temp.txt
       - run: cat temp.txt
-      - run: sed -i "s/BUILD_DATE/$d/" editor.cpp
+      - run: sed -i "s/BUILD_DATE/${{ github.event.repository.updated_at}}/" editor.cpp
       - run: cat editor.cpp
       - run: mkdir docs; cd docs; mkdir html;
       - run: touch docs/html/.nojekyll
