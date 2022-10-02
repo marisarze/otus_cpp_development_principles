@@ -45,13 +45,10 @@ jobs:
       - run: sed -i 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
       - run: sed -i "s/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/" editor.cpp
       - run: sed -i "s/BUILD_DATE/$(date +'%Y-%m-%d')/" editor.cpp
-      - run: cat editor.cpp
       - run: mkdir docs; cd docs; mkdir html;
       - run: touch docs/html/.nojekyll
       - run: sudo apt-get install -y doxygen graphviz texlive-full
       - run: doxygen Doxyfile
-      - run: ls -aq
-      - run: ls -aq docs
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
