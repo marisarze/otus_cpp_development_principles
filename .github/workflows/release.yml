@@ -44,9 +44,8 @@ jobs:
 
       - run: sed -i 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
       - run: sed -i "s/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/" editor.cpp
-      - run: date
-      - run: d=$(date +%Y-%m-%d)
-      - run: echo "$d" > temp.txt
+      - run: d=$(date)
+      - run: echo $d > temp.txt
       - run: cat temp.txt
       - run: sed -i "s/BUILD_DATE/'$d'/" editor.cpp
       - run: cat editor.cpp
